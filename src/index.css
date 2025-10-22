@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hs-darker text-white font-sans;
+  }
+}
+
+@layer components {
+  .deck-card {
+    @apply bg-hs-dark rounded-lg p-3 mb-2 border border-gray-700 hover:border-gray-600 transition-colors;
+  }
+  
+  .deck-list-item {
+    @apply flex items-center justify-between py-1 px-2 text-sm hover:bg-gray-700 rounded;
+  }
+  
+  .class-header {
+    @apply text-white font-bold text-center py-2 px-3 rounded-t-lg;
+  }
+  
+  .mana-cost {
+    @apply w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white;
+  }
+  
+  .card-rarity-common {
+    @apply border-l-4 border-gray-400;
+  }
+  
+  .card-rarity-rare {
+    @apply border-l-4 border-blue-400;
+  }
+  
+  .card-rarity-epic {
+    @apply border-l-4 border-purple-400;
+  }
+  
+  .card-rarity-legendary {
+    @apply border-l-4 border-yellow-400;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
